@@ -232,13 +232,13 @@
 <div class="leaves-bg" id="leaves"></div>
 
 <nav>
-  <div class="logo">LEAF DISEASE DETECTION</div>
+  <div class="logo">LEAFIX</div>
   <div class="nav-links">
     <a href="index.html">Home</a>
-    <a href="#">Login</a>
-    <a href="#">Register</a>
+    <a href="Login.html">Login</a>
+    <a href="register.html">Register</a>
     <a href="#">Admin</a>
-    <a href="about.html" class="active">About</a>
+    <a href="indexabout.html" class="active">About</a>
   </div>
 </nav>
 
@@ -247,9 +247,9 @@
 
   <div class="about-content">
     <p>We are a passionate team dedicated to helping farmers and plant enthusiasts <span class="highlight">detect and prevent leaf diseases</span> early using modern AI technology.</p>
-    
+
     <p>Our mission is simple: make advanced plant health monitoring accessible to everyone — from small-scale farmers in rural areas to home gardeners and large agricultural businesses.</p>
-    
+
     <p>By combining powerful machine learning models with an easy-to-use interface, we aim to reduce crop losses, minimize pesticide usage, and promote sustainable farming practices.</p>
   </div>
 
@@ -274,7 +274,7 @@
 const leafImages = [
   'https://static.vecteezy.com/system/resources/thumbnails/040/216/920/small/ai-generated-mango-leaf-clip-art-free-png.png?w=120',
   'https://static.vecteezy.com/system/resources/thumbnails/022/218/957/small/yellow-leaves-isolated-on-a-transparent-background-png.png?w=120',
-  'https://static.vecteezy.com/system/resources/previews/021/346/717/non_2x/brown-dried-leaf-isolated-on-a-transparent-background-png.png?w=120',
+  'https://static.vecteezy.com/system/resources/thumbnails/022/025/136/small/brown-dried-leaf-isolated-on-a-transparent-background-png.png?w=120',
   'https://static.vecteezy.com/system/resources/thumbnails/040/216/920/small/ai-generated-mango-leaf-clip-art-free-png.png?w=120',
   'https://pngfile.net/files/preview/1280x678/43817508871430jtlwdim482dx4cknq4d5re1ajvldggkgcqj7yvoze1htnp0y9ykzqc548zpw3d6d9gkqfq0lsu2z5k78n2ej0ltiq3jluycisqu.png?w=120'
 ];
@@ -295,7 +295,7 @@ function createLeaf() {
   leaf.style.setProperty('--sway', sway);
   leaf.style.transform = `rotate(${Math.random() * 140 - 70}deg)`;
   document.getElementById('leaves').appendChild(leaf);
-  
+
   // Remove after animation completes (prevents memory buildup)
   setTimeout(() => leaf.remove(), (duration + 8) * 1000);
 }
